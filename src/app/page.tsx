@@ -2,6 +2,7 @@ import Link from "next/link";
 import { providers } from "@/lib/providers";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { HeroCopyrightNotice } from "@/components/Copyright";
 
 const services = [
   {
@@ -102,6 +103,10 @@ export default function Home() {
               <Link href="#services" className="text-[14px] text-canvas/85 underline decoration-white/30 underline-offset-4 hover:text-canvas hover:decoration-white/60 transition">
                 Or learn how we work
               </Link>
+            </div>
+
+            <div data-reveal="5">
+              <HeroCopyrightNotice />
             </div>
           </div>
         </div>

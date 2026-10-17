@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FooterCopyright } from "@/components/Copyright";
 
 export function SiteFooter() {
   return (
@@ -45,12 +46,15 @@ export function SiteFooter() {
         </div>
       </div>
 
+      <FooterCopyright />
+
       <div className="border-t border-hairline">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-wrap items-center justify-between gap-4 text-[12px] text-ink-subtle">
           <div className="font-serif italic">© {new Date().getFullYear()} Family Psychiatry of The Woodlands</div>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="hover:text-ink transition">Privacy</Link>
             <Link href="/terms-and-conditions" className="hover:text-ink transition">Terms</Link>
+            <Link href="/license" className="hover:text-ink transition">License</Link>
             <span>Built by Makologics</span>
           </div>
         </div>
